@@ -180,7 +180,7 @@ async def reply_from_cheat_bot(event):
 
     group_id = last_group_id[reply_msg.id]
     try:
-        delay = random.randint(4, 5)  # 🔁 Delay: 3 to 4 sec
+        delay = random.randint(2,3)  # 🔁 Delay: 3 to 4 sec
         await asyncio.sleep(delay)
 
         sent_msg = await client.send_message(group_id, f"/grab {first_name}")
